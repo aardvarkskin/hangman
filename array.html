@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: blue; text-align: center">
+<script>
+var num = new Array();
+function rand()
+{
+var x = (1 + Math.random()*1000);
+x = Math.round(x);
+return x;
+}
+for (var i = 0; i < 10; i++)
+{
+num[i] = rand();
+}
+num.sort();
+for (var i=0;i<num.length;i++)
+{
+document.write("Welcome to the Matrix    ");
+document.write(num[i] + "<br>");
+}
+</script>
+</body>
+</html>
